@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- https://cdnjs.com/libraries/font-awesome/4.5.0 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" integrity="sha512-EaaldggZt4DPKMYBa143vxXQqLq5LE29DG/0OoVenoyxDrAScYrcYcHIuxYO9YNTIQMgD8c8gIUU8FQw7WpXSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./estiles.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="add-container">
+            <h1>To Do App</h1>
+            <h3>Adicione suas tarefas:</h3>
+            <form action="#">
+                <input type="text" name="task" id="task" placeholder="Tarefa do Dia">
+                <button type="submit" id="add"> <i class="fa fa-plus"> </i></button>
+            </form>
+        </div>
+        <div id="tasks-container">
+            <h3>Veja suas tarefas</h3>
+            <!-- Template -->
+            <div class="task hide">
+                <i class="fa fa-check"></i>
+                <span class="task-title">Título da tarefa</span>
+                <i class="fa fa-trash hide"></i>
+            </div>
+            <!-- Template -->
+            <p id="empty-tasks">Não há tarefas cadastradas.</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
